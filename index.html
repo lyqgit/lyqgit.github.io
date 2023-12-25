@@ -17,7 +17,12 @@
 <script>
     const excel = new eSheet('#elt',{
         width:1200,
-        height:800
+        height:800,
+        init:false
     })
+
+    setTimeout(()=>{
+        excel.drawExcel()
+    },3000)
 </script>
 </html>
